@@ -17,6 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/inisialisasi', function () {
+    return view('inisialisasi');
+});
+
+
+Route::get('/matakuliah', function () {
+    return view('temp');
+});
+
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
